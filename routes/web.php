@@ -26,9 +26,9 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 
-Route::get('/posts/{id}/ogp.png','\App\Http\Controllers\PostController@ogp');
+// Route::get('/posts/{id}/ogp.png','\App\Http\Controllers\PostController@ogp');
 // Route::get('/posts/{id}/ogp.png', [PostController::class, 'ogp'
-
+Route::get('posts/{id}/opg.png', [PostController::class, 'ogp']);
 
 
 require __DIR__.'/auth.php';
