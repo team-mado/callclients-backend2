@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-       public function ogp(Post $post)
+        public function ogp(Post $post)
     {
         // OGPのサイズ
         $w = 600;
@@ -20,7 +20,7 @@ class PostController extends Controller
         // 画像を作成
         $image = \imagecreatetruecolor($w, $h);
         // 背景画像を描画
-        $bg = \imagecreatefromjpeg(resource_path('image/PAKUtexture6160079_TP_V.jpeg'));
+        $bg = \imagecreatefromjpeg(resource_path('image/HIRO95_yuubaenokage_TP_V4.jpg'));
         imagecopyresampled($image, $bg, 0, 0, 0, 0, $w, $h, 800, 533);
 
         // 色を作成
@@ -64,5 +64,4 @@ class PostController extends Controller
             \imagettftext($image, $fontSize, 0, $x + $offset, $y + $offset, $color, $fontPath, $part);
         }
     }
-    
 }
