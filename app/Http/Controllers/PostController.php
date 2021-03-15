@@ -64,4 +64,5 @@ class PostController extends Controller
             \imagettftext($image, $fontSize, 0, $x + $offset, $y + $offset, $color, $fontPath, $part);
         }
     }
+    
 }
