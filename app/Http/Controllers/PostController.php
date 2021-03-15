@@ -20,7 +20,7 @@ class PostController extends Controller
         // 画像を作成
         $image = \imagecreatetruecolor($w, $h);
         // 背景画像を描画
-        $bg = \imagecreatefromjpeg(resource_path('image/HIRO95_yuubaenokage_TP_V4.jpg'));
+        $bg = \imagecreatefromjpeg(resource_path('image/PAKUtexture6160079_TP_V.jpeg'));
         imagecopyresampled($image, $bg, 0, 0, 0, 0, $w, $h, 800, 533);
 
         // 色を作成
