@@ -5,11 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  @section('additionalMeta')
-  <meta property="og:image" content="{{ config('app.url') }}/posts/{{ $post->id }}/ogp.png">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:image" content="{{ config('app.url') }}/posts/{{ $post->id }}/ogp.png">
-  @endsection
 
   <title>{{ config('app.name', 'Laravel') }}</title>
 
@@ -44,3 +39,4 @@
 </body>
 
 </html>
+共
